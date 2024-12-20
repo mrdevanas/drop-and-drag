@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: cursive;
+    }
+    .up {
+      width: 400px;
+      height: 180px;
+      margin-top: 90px;
+      background-color: rgb(255, 229, 112);
+      border: 2px red dotted;
+      border-radius: 20px;
+      overflow-y: auto;
+      max-height: 300px;
+    }
+    .con {
+      display: flex;
+      justify-content: space-between;
+    }
+    .one {
+      width:400px;
+      height: 250px;
+      position: relative;
+      top: 150px;
+      background-color: rgb(255, 234, 131);
+      border: 2px red dotted;
+      border-radius: 20px;
+      text-align: center;
+      overflow-y: auto;
+      max-height: 300px;
+   
+    }
+    img {
+      margin-bottom: 4px;
+             margin: 8px;
+
+      cursor: move;
+      transition: all 0.3s ease; 
+    }
+    
+  </style>
+</head>
+<body style="background-color: rgb(255, 106, 0);">
+  <center>
+    <div class="up" style="padding: 20px; display: flex; flex-direction: column; ">
+      <div class="container">
+       
+          <div class="search-box">
+            
+            <input type="text" id="searchInput" placeholder="Search For Anime" style="text-align: center;" />
+          </div>
+        
+<br>
+        <div style="display: flex; justify-content: space-around; padding-bottom: -200px;  margin-bottom: 20px; " class="sh" >
+          <img src="https://fr.web.img4.acsta.net/pictures/19/09/16/17/09/4903250.jpg" alt="" width="83px" height="120px" draggable="true"   id="Vinland Saga">
+          <img src="https://witanime.cyou/wp-content/uploads/2023/01/Dragon-Ball-413x559.jpg" alt="" width="83px" height="120px" draggable="true"   id="Dragon Ball">
+          <img src="https://witanime.cyou/wp-content/uploads/2023/12/One-Piece-Egghead-413x559.jpg" alt="" width="83px" height="120px" draggable="true"  id="One Piece">
+          <img src="https://witanime.cyou/wp-content/uploads/2022/03/Hajime-no-Ippo-Boxer-no-Kobushi-413x559.jpg" alt="" width="83px" height="120px" draggable="true"  id="Hajime no Ippo">
+
+       
+      </div>
+      <div style="display: flex; justify-content: space-around; padding-bottom: -200px; margin-bottom: 20px;" class="sh">
+        <img src="https://witanime.cyou/wp-content/uploads/2021/10/Slam-Dunk-413x559.jpg" alt="" width="83px" height="120px" draggable="true">
+        <img src="https://witanime.cyou/wp-content/uploads/2022/11/Monster-413x559.jpg" alt="" width="83px" height="120px" draggable="true">
+        <img src="https://witanime.cyou/wp-content/uploads/2020/12/One-Punch-Man-2nd-Season-413x559.png" alt="" width="83px" height="120px" draggable="true">
+        <img src="https://witanime.cyou/wp-content/uploads/2020/09/Jujutsu-Kaisen-TV-413x559.jpg" alt="" width="83px" height="120px" draggable="true">
+
+     
+    </div>
+    <div style="display: flex; justify-content: space-around; padding-bottom: -200px; margin-bottom: 20px;" class="sh" >
+      <img src="https://witanime.cyou/wp-content/uploads/2024/01/Solo-Leveling-Ore-dake-Level-Up-na-Ken-scaled-413x559.jpg" alt="" width="83px" height="120px" draggable="true">
+      <img src="https://witanime.cyou/wp-content/uploads/2020/09/Kimetsu-no-Yaiba-413x559.jpg" alt="" width="83px" height="120px" draggable="true">
+      <img src="https://witanime.cyou/wp-content/uploads/2021/09/Naruto-413x559.png" alt="" width="83px" height="120px" draggable="true">
+      <img src="https://witanime.cyou/wp-content/uploads/2021/07/Ansatsu-Kyoushitsu-2nd-Season-413x559.jpeg" alt="" width="83px" height="120px" draggable="true">
+
+   
+  </div>
+  <div style="display: flex; justify-content: space-around; padding-bottom: -200px; margin-bottom: 20px; " >
+    <img src="https://witanime.cyou/wp-content/uploads/2020/07/Boku-No-Hero-Academia-413x559.jpg" alt="" width="83px" height="120px" draggable="true">
+    <img src="https://witanime.cyou/wp-content/uploads/2020/08/Boku-dake-ga-Inai-Machi-413x559.jpg" alt="" width="83px" height="120px" draggable="true">
+    <img src="https://witanime.cyou/wp-content/uploads/2023/09/Sousou-no-Frieren-413x559.jpg" alt="" width="83px" height="120px" draggable="true">
+    <img src="https://witanime.cyou/wp-content/uploads/2021/07/Hunter-x-Hunter-2011-413x559.jpg" alt="" width="83px" height="120px" draggable="true">
+
+ 
+</div>
+    </div>
+  </center>
+  <div class="con">
+    <div class="one"  style=" justify-content: space-between; flex-direction: column; max-width: 300px; overflow-x: hidden; margin-left: 20px;">
+      <input value="8/10" style="text-align: center; height: 40px; font-size: large; width: 300px; background-color: yellow;   " >
+      <hr>
+    </div>
+    <div class="one"  style=" justify-content: space-between; flex-direction: column; max-width: 300px; overflow-x: hidden;">
+      <input value="9/10" style="text-align: center; height: 40px; font-size: large; width: 300px; background-color: yellowgreen;   " >
+
+     
+      <hr>
+    </div>
+    <div class="one"  style=" justify-content: space-between; flex-direction: column; max-width: 300px; overflow-x: hidden;">
+      <input value="10/10" style="text-align: center; height: 40px; font-size: large; width: 300px;  background-color: green;  " >
+
+     
+      <hr>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  let btn = document.getElementById("btn");
+  let inp = document.getElementById("inp");
+  let boxes = document.querySelectorAll(".one");
+  let dragItem = null;
+
+  // Function to handle drag events
+  function handleDragEvents(item) {
+    item.addEventListener('dragstart', function(e){
+      e.dataTransfer.setData('text/plain', null); // needed for Firefox
+      dragItem = this;
+      this.style.opacity = '0.5';
+    });
+    item.addEventListener('dragend', function(){
+      dragItem = null;
+      this.style.opacity = '1';
+    });
+  }
+
+  // Adding drag event listeners to all draggable items
+  document.querySelectorAll('[draggable="true"]').forEach(item => {
+    handleDragEvents(item);
+  });
+
+  // Function to handle dropping items into boxes
+  function handleDropEvents(box) {
+    box.addEventListener('dragover', function(e){
+      e.preventDefault();
+    });
+    box.addEventListener('dragenter', function(e){
+      e.preventDefault();
+      this.style.background = 'lightgray';
+    });
+    box.addEventListener('dragleave', function(){
+      this.style.background = 'white';
+    });
+    box.addEventListener('drop', function(e){
+      e.preventDefault();
+      this.append(dragItem);
+      this.style.background = 'white';
+    });
+  }
+
+  // Adding drop event listeners to all boxes
+  boxes.forEach(box => {
+    handleDropEvents(box);
+  });
+
+  // Function to handle adding text on button click
+  btn.onclick = function(){
+    if(inp.value != ''){
+      boxes[0].innerHTML += `<p class="it" draggable="true">${inp.value}</p>`;
+      let newItem = boxes[0].lastElementChild;
+      handleDragEvents(newItem);
+      inp.value = '';
+    }
+  };
+</script>
+
+<script>document.addEventListener('DOMContentLoaded', function () {
+  const searchInput = document.querySelector(".search-box input");
+  const images = document.querySelectorAll(".sh img");
+
+  searchInput.addEventListener("keyup", function (e) {
+    const searchValue = e.target.value.trim().toLowerCase();
+
+    images.forEach(img => {
+      const imageId = img.id.toLowerCase();
+
+      if (searchValue !== "") {
+        // Check if the image has been dragged to any of the boxes
+        const inBox = Array.from(document.querySelectorAll(".one img")).some(boxImg => boxImg.id === img.id);
+
+        // If the image is in a box, skip the search update
+        if (!inBox) {
+          if (imageId.includes(searchValue)) {
+            img.style.display = 'inline'; // Show matching images
+          } else {
+            img.style.display = 'none'; // Hide non-matching images
+          }
+        }
+      } else {
+        img.style.display = 'inline'; // Display all images if search input is empty
+      }
+    });
+  });
+});
+
+
+</script>
